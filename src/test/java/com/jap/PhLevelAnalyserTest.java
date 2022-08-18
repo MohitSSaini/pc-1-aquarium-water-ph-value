@@ -30,7 +30,16 @@ public class PhLevelAnalyserTest {
         Assertions.assertEquals(expectedResult,actualResult);
     
     }
+    @Test
+    public void getPhValueOfWaterForInputPhEight ( ) {
+        //arrange
+        String expectedResult = "pH value is fine";
+        //act
+        String actualResult = phLevelAnalyser.getPhValueOfWater ( 8 );
+        //assert
+        Assertions.assertEquals ( expectedResult , actualResult );
     
+    }
    
     
 }
