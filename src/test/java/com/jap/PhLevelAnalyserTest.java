@@ -40,6 +40,13 @@ public class PhLevelAnalyserTest {
         Assertions.assertEquals ( expectedResult , actualResult );
     
     }
-   
-    
+    @Test
+    public void getPhValueOfWaterForInputPhTen() {
+        //Arrange
+        String expextedResult = "pH value is high, partial water change required";
+        //act
+        String actualResult = phLevelAnalyser.getPhValueOfWater ( 10 );
+        //assert
+        Assertions.assertEquals ( expextedResult , actualResult );
+    }
 }
