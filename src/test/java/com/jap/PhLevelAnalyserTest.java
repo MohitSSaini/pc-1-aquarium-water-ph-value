@@ -6,30 +6,30 @@ import org.junit.Test;
 import org.junit.jupiter.api.Assertions;
 
 
-
 public class PhLevelAnalyserTest {
     PhLevelAnalyser phLevelAnalyser;
-
+    
     @Before
-    public void setUp()  {
-      phLevelAnalyser = new PhLevelAnalyser();
+    public void setUp ( ) {
+        phLevelAnalyser = new PhLevelAnalyser ( );
     }
-
+    
     @After
-    public void tearDown()  {
+    public void tearDown ( ) {
         phLevelAnalyser = null;
     }
     
     @Test
     public void getPhValueOfWaterForInputPh7 ( ) {
         //arrange
-        String expectedResult ="pH value is fine";
+        String expectedResult = "pH value is fine";
         //act
-        String actualResult = phLevelAnalyser.getPhValueOfWater( 7 );
+        String actualResult = phLevelAnalyser.getPhValueOfWater ( 7 );
         //assert
-        Assertions.assertEquals(expectedResult,actualResult);
-    
+        Assertions.assertEquals ( expectedResult , actualResult );
+        
     }
+    
     @Test
     public void getPhValueOfWaterForInputPhEight ( ) {
         //arrange
@@ -38,10 +38,11 @@ public class PhLevelAnalyserTest {
         String actualResult = phLevelAnalyser.getPhValueOfWater ( 8 );
         //assert
         Assertions.assertEquals ( expectedResult , actualResult );
-    
+        
     }
+    
     @Test
-    public void getPhValueOfWaterForInputPhTen() {
+    public void getPhValueOfWaterForInputPhTen ( ) {
         //Arrange
         String expextedResult = "pH value is high, partial water change required";
         //act
